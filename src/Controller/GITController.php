@@ -19,7 +19,8 @@ class GITController extends AbstractController
              
         $client = new Client();
         $res = $client->request('GET', 'https://api.github.com/repos/Pylouface/TLD_Project/commits', [
-            'auth' => ['martin0charley@gmail.com', 'Ddioat1sim']
+            
+            'auth' => ['martin0charley@gmail.com', 'putYourPassword']
         ]);
 
         //echo $res->getStatusCode();
